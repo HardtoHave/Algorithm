@@ -32,7 +32,6 @@ public class GreedyAlgorithm {
                 schedule.add(task);
                 lastEnd = task.endTime;
             }
-
         }
         // Print the schedule
         System.out.println("Schedule:");
