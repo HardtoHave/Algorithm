@@ -6,7 +6,9 @@ public class DichotomousSearch {
         int right = arr.length - 1;
 
         while (left <= right) {
-            int mid = (left + right) / 2;
+            //truncation when num is odd negative
+            int mid = left+((right-left)>>1);
+            //int mid=(left+right)>>1;
 
             if (arr[mid] == target) {
                 return mid;
