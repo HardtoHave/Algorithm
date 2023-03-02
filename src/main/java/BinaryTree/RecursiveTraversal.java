@@ -1,5 +1,7 @@
 package BinaryTree;
 
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Stack;
 
 public class RecursiveTraversal {
@@ -16,6 +18,7 @@ public class RecursiveTraversal {
         if (head==null){
             return;
         }
+        HashSet<Character> temp=new HashSet();
         System.out.print(head.value);
         preOrderRecursive(head.left);
         preOrderRecursive(head.right);
