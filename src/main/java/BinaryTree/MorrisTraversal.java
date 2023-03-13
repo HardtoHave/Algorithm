@@ -25,7 +25,7 @@ public class MorrisTraversal {
             return;
         }
         Node cur=head;
-        Node mostRight=null;
+        Node mostRight;
         while (cur!=null){
             mostRight=cur.left;
             if (mostRight!=null){
